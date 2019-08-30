@@ -2,7 +2,7 @@
 # name, network, and day have a datatype of string, and
 # rating has a datatype of integer.
 
-class CreateShows
+class CreateShows < ActiveRecord::Migrate[5.2]
 
 def change
   create_table(:shows) do |t|
